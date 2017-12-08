@@ -1,0 +1,35 @@
+function propdetails(errors) {
+    
+    var number=document.mortgage.propDetails.length;
+    var k=0;
+    for(var i=0;i<number;i++)
+        if(document.mortgage.propDetails[i].checked==false) {
+            k++;
+    }
+    if(k==num) {
+        activateErrors(11);                                     
+        fullerrors += "11.No Property Details selected<br/>"; 
+    }
+
+    return errors;
+}
+
+
+
+function toggle() {
+
+    var num=document.mortgage.propDetails.length;
+    if(document.mortgage.propDetails[num-1].checked==true) {
+    for(var i=0;i<num-1;i++)
+        document.mortgage.propDetails[i].checked=false;
+    }
+}
+ 
+ function toggle2() {
+    var num=document.mortgage.propDetails.length;
+    for(var i=0;i<num-1;i++)
+        if(document.mortgage.propDetails[i].checked==true) {
+            document.mortgage.propDetails[num-1].checked=false;
+            break;
+    }
+}    
